@@ -3,10 +3,12 @@ package hello.hello_spring.repository.service;
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
 import hello.hello_spring.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 // 커맨드 쉬프트 t 누르면 자동으로 test 생성해줌.
+@Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
